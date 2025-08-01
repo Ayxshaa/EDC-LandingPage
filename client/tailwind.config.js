@@ -1,13 +1,14 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class", // Enable dark mode with 'class'
+  content: ["./src/**/*.{js,jsx,ts,tsx}"], // Tailwind content paths
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Roboto", "Arial", "sans-serif"], // Replace "Roboto" with your preferred font
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [
+    // Add this function to plugins
+  ],
 };
+
